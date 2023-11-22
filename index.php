@@ -38,3 +38,26 @@ $hotels = [
     ],
 
 ];
+
+
+for ($i = 0; $i < count($hotels); $i++) {
+    // var_dump($hotels[$i]);
+
+    $hotel_detail = $hotels[$i];
+    // var_dump($hotel_detail);
+
+    foreach ($hotel_detail as $key => $hotel_info) {
+        // var_dump($hotel_info);
+
+?>
+        <ul>
+            <li>
+                <strong><?php echo $key ?></strong>
+                <span><?php echo $hotel_info ?></span>
+            </li>
+        </ul>
+
+<?php
+    }
+}
+// var_dump($hotels);
